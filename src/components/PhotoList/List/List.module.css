@@ -1,0 +1,33 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gridItem {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.gridItem-column-1 {
+  width: 100%;
+}
+
+.gridItem-column-2 {
+  width: 50%;
+}
+
+.gridItem-column-3 {
+  width: 33%;
+}
+
+.photoRoot {
+  width: calc(100% - 16px);
+  margin: auto;
+  text-align: center;
+}
+
+.photoRoot img {
+  max-width: 100%;
+  
+}

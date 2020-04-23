@@ -1,0 +1,62 @@
+.spinner {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.spinner div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  margin: 8px;
+  border: 5px solid;
+  border-radius: 50%;
+  animation: spinner 1s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+.mediumRing {
+  width: 64px;
+  height: 64px;
+}
+
+.largeRing {
+  width: 96px;
+  height: 96px;
+}
+
+.smallRing {
+  width: 32px;
+  height: 32px;
+}
+
+.blueRing {
+  border-color: #303f9f transparent transparent transparent !important;
+}
+
+.redRing {
+  border-color: #f44336 transparent transparent transparent !important;
+}
+
+.greyRing {
+  border-color: #ccc transparent transparent transparent !important;
+}
+
+.spinner div:nth-child(1) {
+  animation-delay: -0.15s;
+}
+.spinner div:nth-child(2) {
+  animation-delay: -0.1s;
+}
+.spinner div:nth-child(3) {
+  animation-delay: -0.05s;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
